@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1D3557, #b6b3b3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h1, h2, h3 {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    
+}
+h1 {
+    color: white;
+    font-size:5rem;
+    font-weight: 6000;
+}
+
+
+#menu { 
+    display: flex;
+    flex-direction:column; /* para que el menu se vea en vertical */
+    align-items:center;
+    color: white;
+}
+
+header nav{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+nav button a { 
+    color:#000000;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton {
+    display: inline-block;
+    padding: 4px 20px;
+    font-size: 20px;
+    background-color: #B2C1D6	; 
+    font-weight: bold;
+    box-shadow: #FFEECD 0px 0px 5px 2px;
+    border-radius:20px;
+}
+
+.boton:hover {
+    background-color:#577296; 
+}
+.boton:active {
+    background-color: #6177EB; 
+}
+
+h2{
+    color: white ;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#tablamaterias {
+    color: white ;
+    font-size: 20px;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+th {
+    background-color: rgba(4, 4, 4, 0.441);
+    color: #ffffff;
+    font-weight:lighter
+}
+/*FINAL DE HOME*/
+/*COMIENZO PARA EL FOOTER*/
+footer  {
+    background-color: rgba(4, 4, 4, 0.441); /* gris leve con transparencia */
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    bottom:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+/*ESTILO PARA AVISOS*/
+.avisos {padding: 0 ;
+    margin: 0;
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    gap: 70px;
+}
+ul {
+    justify-content: center;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration:none;
+    color:#57431D
+}
+
+.section {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 33px;
+    align-items: center;
+}
+
+
+/*ESTILO PARA SOBRE MI*/
+#leo {
+    text-align: start;
+    padding-left: 30px;
+}
+#contenidoimg {
+    display: flex;
+}
+#contenidoimg #imgsobremi {
+    display: flex;
+    height: 200px;
+    width: 200px;
+}
+#contenidoimg #contenidotextosobremi {
+    width: 50%;
+    padding-right: 40px;
+    text-align: justify;
+}
+#contenidotextosobremi p{
+    color: white;
+    font-size: 20px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+/*ESTILO PARA MATERIAS2025*/
+.materias {margin-top: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+}
+#botondiseño {padding: 10px 60px ;
+    font-size: 20px;
+    background-color: #B2C1D6;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: #ffffff 0px 0px 5px 2px;
+    list-style: none;
+    border-radius: 20px;
+
+}
+ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+ul button a { 
+    color:#000000;
+    text-decoration: none;
+}
+#botondiseño:hover {
+    background-color:#577296
+}
+
+#botondiseño:active {
+    background-color: #6177EB;
+}
+
+#formulario {
+    color: white;
+    width: 100;            
+    height: 70%;          
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight:100;
+}
+
+/*ESTILO PARA DISEÑO Y DESARROLLO WEB*/
+h3  {
+    color: white;
+    font-size: 30px;
+    margin-top: 35px;
+    padding: right 30px;
+}
+#diseñofecha {
+    padding-left: 30px;
+}
+#parciales {
+    text-align: justify;
+}
+
+#examenes div p{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#examenes {color: white;
+    font-size: 20px;
+    text-align: start;
+    margin-top: 35px;
+    width: 40%;
+    justify-content: center;
+}
+#actividades h3 {
+    display: flex;
+    
+}
+#actividades{ color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+section h3 p{
+    text-align: start;
+    padding-left: 50px;
+}
+
+#biblio div{display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    margin-top: 35px;
+}
+
+
+/*contacto*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+input, textarea {
+    width: 80%;
+    padding: 5px;
+    margin: 10px 0;
+}
+label {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+input {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 20px;
+}
+.btn{
+    background-color: #778496;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: #FFEECD 0px 0px 5px 2px;
+    border-radius:20px;
+    padding: 10px 20px;
+    border: none;
+}
+.btn:hover {
+    background-color: #6177EB;
+    color: #ffffff;
+}
+.btn:active {
+    background-color: #4B5A7F;
+    color: #ffffff;
+}
+
+/*Responsive */
+@media (min-width:720px) {
+        h1{
+        font-size: 5rem;
+        align-items: center;
+    }
+    #menu { 
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-between
+    }
+    header nav {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+    #imgsobremi{
+        width:500px;
+    }
+    
+    #contenidoimg #contenidotextosobremi {
+        width: 50%;
+        padding: 0px 30px ;
+        display: flex;
+        flex-direction: row;
+    }
+    footer {position:fixed;
+        bottom: 0;
+    }
+
+    #parrafo, #parrafo3 {
+    padding: 5px 0;
+    align-items: center;
+    text-align: center;
+}
+
+}
