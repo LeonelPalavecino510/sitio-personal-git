@@ -47,10 +47,11 @@ header nav{
     gap: 10px;
 }
 
-nav button a { 
+nav  a { 
     color:#000000;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .boton {
@@ -61,6 +62,7 @@ nav button a {
     font-weight: bold;
     box-shadow: #FFEECD 0px 0px 5px 2px;
     border-radius:20px;
+    border: black 1px solid;
 }
 
 .boton:hover {
@@ -82,10 +84,11 @@ h2{
     color: white ;
     font-size: 20px;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
 table {
     border-collapse: collapse;
-    width: 100%;
 }
 
 th, td {
@@ -96,7 +99,7 @@ th, td {
 th {
     background-color: rgba(4, 4, 4, 0.441);
     color: #ffffff;
-    font-weight:lighter
+    font-weight:lighter;
 }
 /*FINAL DE HOME*/
 /*COMIENZO PARA EL FOOTER*/
@@ -107,7 +110,7 @@ footer  {
     width: 100%;
     font-size: 15px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    width: 100%;
 }
 
     #parrafo, #parrafo3 {
@@ -184,29 +187,20 @@ ul li a {
     color: white;
     font-size: 30px;
 }
-#botondiseño {padding: 10px 60px ;
-    font-size: 15px;
-    background-color: #B2C1D6;
-    color: #ffffff;
-    font-weight: bold;
-    box-shadow: #ffffff 0px 0px 5px 2px;
-    list-style: none;
-    border-radius: 20px;
 
-}
 ul {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
 }
-ul button a { 
+ul a { 
     color:#000000;
     text-decoration: none;
 }
-#botondiseño:hover {
+.boton:hover {
     background-color:#577296
 }
 
-#botondiseño:active {
+.boton:active {
     background-color: #6177EB;
 }
 
@@ -320,12 +314,14 @@ input {
         h1{
         font-size: 5rem;
         align-items: center;
+        text-align: center justify;
     }
     h2, h3 {
         align-items: center;
     }
     table {
         width: 100%;
+        align-items: center;
     }
 
     .avisos {width: 100%;
@@ -338,7 +334,7 @@ input {
     #menu { 
         flex-direction:column;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
     }
     header nav {
         flex-direction: row;
