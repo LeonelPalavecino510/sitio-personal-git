@@ -113,18 +113,19 @@ th {
 
 /*COMIENZO PARA EL FOOTER*/
 footer  {
-    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: rgba(4, 4, 4, 0.441); /* gris leve con transparencia */
     color: white;
     width: 100%;
     font-size: 15px;
     font-family:'Roboto', sans-serif;
-    width: 100%;
 }
 
-    #parrafo, #parrafo3 {
-    padding: 5px 0;
-    align-items: center;
+footer div{
+    flex: 1 1 300px;
+    margin: 10px;
     text-align: center;
 }
 
