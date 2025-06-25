@@ -15,14 +15,14 @@ header{margin: 0;
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #1D3557, #b6b3b3);
+    background: linear-gradient(to bottom, #1D3557, #aaa7a7);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
     font-family: 'Roboto', sans-serif;
 }
 h1, h2, h3 {
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 }
 h1 {
@@ -33,28 +33,35 @@ h1 {
 }
 
 
-#menu { 
+#sectionnav { 
     display: flex;
     flex-direction:column; /* para que el menu se vea en vertical */
     align-items:center;
     color: white;
+    margin-top: 2rem;
 }
 
 header nav{
     display:flex;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 1.5rem;
 }
 
 nav  a { 
-    color:#000000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-
+    border-radius: 20px;
+    transition:  0.1s ease;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
 }
 
-.boton {
+.seleccionado {
     display: inline-block;
     padding: 4px 20px;
     font-size: 15px;
@@ -65,12 +72,21 @@ nav  a {
     border: black 1px solid;
     align-items: center;
 }
-
+.seleccionado:hover {
+    background-color: #B2C1D6;
+    color: white;
+}
+.seleccionado:active {
+    background-color: #808a98;
+    color: white;
+}
 .boton:hover {
     background-color:#577296; 
+    color: white;
 }
 .boton:active {
     background-color: #6177EB; 
+    color: white;
 }
 
 h2{
