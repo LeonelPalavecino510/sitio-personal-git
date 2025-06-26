@@ -7,19 +7,38 @@
 html {
     scroll-behavior: smooth;
 }
+:root {
+    --fondo: #1D3557;
+    --fondo2: #aaa7a7;
+    --fondo3:#5F7FA3;
+    --fuente: poppins, sans-serif;
+    --fuente2: 'Roboto', sans-serif;
+    --colorcard: #B3C4D8;
+
+
+}
 
 header{margin: 0;
     padding: 0;
     width: 100%;
+    background-color: #5f7fa3;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #1D3557, #aaa7a7);
+    background-color: #5f7fa3;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
-    font-family: 'Roboto', sans-serif;
+    font-family:var(--fuente2);
 }
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
@@ -49,7 +68,7 @@ header nav{
 }
 
 nav  a { 
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     font-size: 1em;
     text-decoration: none;
@@ -63,29 +82,29 @@ nav  a {
 
 .seleccionado {
     display: inline-block;
-    padding: 4px 20px;
+    padding: 10px 25px;
     font-size: 15px;
     background-color: #B2C1D6	; 
     font-weight: bold;
-    box-shadow: #bed4d3 0px 0px 3px 3px;
+    box-shadow: #ffffff 0px 0px 15px 5px;
     border-radius:20px;
-    border: black 1px solid;
-    align-items: center;
+    justify-content: center;
+
 }
 .seleccionado:hover {
-    background-color: #B2C1D6;
+    background-color: #535A63;
     color: white;
 }
 .seleccionado:active {
-    background-color: #808a98;
+    background-color: #4E4B45;
     color: white;
 }
 .boton:hover {
-    background-color:#577296; 
+    background-color:#535A63; 
     color: white;
 }
 .boton:active {
-    background-color: #6177EB; 
+    background-color: #4E4B45; 
     color: white;
 }
 
@@ -159,22 +178,34 @@ footer div{
 
 .containertitle {
     width: 300px;
-    background-color: #dfdfdf4f;
+    background-color: #b3c4d86e;
     padding: 10px;
     border-radius: 8px;
     }
-.section {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+p.sectiontitle {
+    font-family: var(--fuente);
+    font-size: 2em;
+    font-weight: bold;
 }
-ul {
-    justify-content: center;
+ul li {
     text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-style:italic;
 }
 
-ul li a {
+li a.sitioprofe {
     text-decoration:none;
-    color:#57431D
+    color:#64768A
+}
+
+a.sitioprofe:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a.sitioprofe:active {
+    color: #242B33;
 }
 
 .section {
