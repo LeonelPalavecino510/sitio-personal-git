@@ -53,8 +53,14 @@ h1 {
     font-weight: 6000;
     align-items: center ;
 }
-
-
+h2{
+    color: white ;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+}
 #sectionnav { 
     display: flex;
     flex-direction:column; /* para que el menu se vea en vertical */
@@ -111,14 +117,7 @@ nav  a {
     color: white;
 }
 
-h2{
-    color: white ;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 40px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
+
 
 #tablamaterias {
     color: white ;
@@ -176,7 +175,7 @@ footer div{
     justify-content: center;
     width: 100%;
     color: white;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .containertitle {
@@ -185,30 +184,32 @@ footer div{
     padding: 10px;
     border-radius: 8px;
     }
-p.sectiontitle {
+.sectiontitle {
     font-family: var(--fuente);
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: bold;
 }
-ul li {
+ul .section {
     text-align: center;
     justify-content: center;
     text-decoration: none;
+    
+}
+.section li {
+    font-size: 0.6em;
     font-style:italic;
 }
-
-li a.sitioprofe {
+a.sitioprofe {
     text-decoration:none;
     color:#64768A
 }
 
 a.sitioprofe:hover {
     color: #000000;
-    text-decoration: underline;
 }
 
 a.sitioprofe:active {
-    color: #242B33;
+    color: #51575f;
 }
 
 .section {
@@ -257,7 +258,6 @@ main section {
     color: black;
     font-size: 1.3em;
     font-family: var(--fuente2);
-    align-items: center ;
     margin-top: 2rem;
     text-align: justify;
 }
@@ -268,25 +268,23 @@ main section {
 
 
 /*ESTILO PARA MATERIAS2025*/
-.materias {margin-top: 10px;
-    padding: 0;
+.materias {
     display: flex;
     flex-direction: center;
     text-align: center;
     justify-content: center;
     width: 100%;
     color: white;
-    font-size: 30px;
 }
 
 li {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-family:var(--fuente2);
+    font-size: 2rem;
     text-align: center;
-    align-items: justify;
+    align-items: center;
 }
-ul a { 
-    color:#000000;
+ul #materias25  { 
+    color:white;
     text-decoration: none;
     margin-bottom: 20px;
 }
