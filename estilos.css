@@ -213,8 +213,8 @@ a.sitioprofe:active {
 }
 
 .section {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 33px;
+    font-family: var(--fuente2);
+    font-size: 2rem;
     align-items: center;
 }
 
@@ -268,17 +268,21 @@ main section {
 
 
 /*ESTILO PARA MATERIAS2025*/
+
 .materias {
     display: flex;
     flex-direction: center;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    width: 60%;
     color: white;
+    background-color:#b3c4d86e;
+    padding: 2rem;
+    border-radius: 1em;
 }
 
-li {
-    font-family:var(--fuente2);
+li.materias1c {
+    font-family:var(--fuente);
     font-size: 2rem;
     text-align: center;
     align-items: center;
@@ -289,10 +293,31 @@ ul #materias25  {
     margin-bottom: 20px;
 }
 li.materias1c {
-    font-weight: bold;
     padding: 10px;
     margin-bottom: 10px;
+    font-size: 1.5em;
 }
+
+.botondiseño {
+    font-family: var(--fuente);
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.2em;
+    background-color: #b4bac3	; 
+    font-weight: bold;
+    border-radius:20px;
+    justify-content: center;
+}
+
+.botondiseño:hover {
+    background-color: #577296; 
+    color: white;
+}
+.botondiseño:active {
+    background-color: #6177EB; 
+    color: white;
+}
+
 
 /* COMIENZO DE FORMULARIO */
 .boton:hover {
