@@ -111,10 +111,12 @@ nav  a {
 .boton:hover {
     background-color:#535A63; 
     color: white;
+    padding: 10px 25px
 }
 .boton:active {
     background-color: #4E4B45; 
     color: white;
+    padding: 10px 25px
 }
 
 
@@ -447,6 +449,7 @@ input {
     border-radius:20px;
     padding: 10px 20px;
     border: none;
+    margin-top: 2.5rem;
 }
 .btn:hover {
     background-color: #6177EB;
@@ -457,6 +460,12 @@ input {
     color: #ffffff;
 }
 
+.formtext {
+    font-family: var(--fuente2);
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
 /*Responsive */
 @media (min-width:720px) {
 
