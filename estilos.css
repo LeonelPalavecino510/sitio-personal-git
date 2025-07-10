@@ -17,9 +17,7 @@ html {
     --colorcard: #B3C4D8;
     --bold: bold;
     --fontcolor: #17202d;
-    
-
-}
+    }
 
 header{margin: 0;
     padding: 0;
@@ -54,6 +52,7 @@ h1 {
     font-weight: 6000;
     align-items: center ;
 }
+
 h2{
     color: white ;
     font-size: 3rem;
@@ -62,6 +61,7 @@ h2{
     margin-top: 1rem;
     margin-bottom: 1.3rem;
 }
+
 #sectionnav { 
     display: flex;
     flex-direction:column; /* para que el menu se vea en vertical */
@@ -99,16 +99,18 @@ nav  a {
     box-shadow: #ffffff 0px 0px 15px 5px;
     border-radius:20px;
     justify-content: center;
-
 }
+
 .seleccionado:hover {
     background-color: #535A63;
     color: white;
 }
+
 .seleccionado:active {
     background-color: #4E4B45;
     color: white;
 }
+
 .boton:hover {
     background-color:#535A63; 
     color: white;
@@ -119,8 +121,6 @@ nav  a {
     color: white;
     padding: 10px 25px
 }
-
-
 
 #tablamaterias {
     color: white ;
@@ -186,22 +186,26 @@ footer div{
     background-color: #b3c4d86e;
     padding: 10px;
     border-radius: 8px;
-    }
+}
+
 .sectiontitle {
     font-family: var(--fuente);
     font-size: 2.2em;
     font-weight: bold;
 }
+
 ul .section {
     text-align: center;
     justify-content: center;
     text-decoration: none;
     
 }
+
 .section li {
     font-size: 0.6em;
     font-style:italic;
 }
+
 a.sitioprofe {
     text-decoration:none;
     color:#64768A
@@ -221,19 +225,20 @@ a.sitioprofe:active {
     align-items: center;
 }
 
-
 /*ESTILO PARA SOBRE MI*/
 main h2 .titleleo {display:flex; 
     flex-direction: column;
     align-items: center;
     padding-left: 30px;
 }
+
 main .cardsobremi {
     background-color: var(--colorcard);
     border-radius: 20px;
     padding: 20px;
     width: 80%;
 }
+
 main section {
     display: flex;
     flex-direction: column;
@@ -257,6 +262,7 @@ main section {
     border-radius: 50%;
     object-fit: cover;
 }
+
 #contenidotextosobremi {
     color: black;
     font-size: 1.3em;
@@ -264,11 +270,11 @@ main section {
     margin-top: 2rem;
     text-align: justify;
 }
+
 .texto {
     font-weight: var(--bold);
     color: var(--fontcolor);
 }
-
 
 /*ESTILO PARA MATERIAS2025*/
 
@@ -290,11 +296,13 @@ li.materias1c {
     text-align: center;
     align-items: center;
 }
+
 ul #materias25  { 
     color:white;
     text-decoration: none;
     margin-bottom: 20px;
 }
+
 li.materias1c {
     padding: 10px;
     margin-bottom: 10px;
@@ -480,6 +488,17 @@ input {
         align-items: center;
     }
 
+    main {
+        padding: 2em 4em;
+        width: 100%;
+        align-items: center;
+    }
+    nav {
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
     table {
         width: 100%;
         align-items: center;    
