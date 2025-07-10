@@ -477,7 +477,9 @@ input {
 }
 /*Responsive */
 @media (min-width:720px) {
-
+    body {
+        width: fit-content;
+    }
         h1{
         font-size: 5rem;
         align-items: center;
@@ -534,6 +536,7 @@ input {
         
     }
     ul.section{
+        text-decoration: none;
         list-style-type: none;
         text-align: justify;
         font-size: 2em;
@@ -556,13 +559,16 @@ input {
     
     #contenidoimg #contenidotextosobremi {
         width: 50%;
-        padding: 0px 30px ;
+        padding: 2rem; ;
         display: flex;
         flex-direction: row;
     }
-    footer {position:fixed;
-        bottom: 0;
-        width: 100%;
+    div #contenidotextosobremi p {
+        width: 50%;
+    }
+    footer {
+        bottom:0px;
+        width:fit-content
         
     }
 
