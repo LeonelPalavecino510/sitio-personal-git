@@ -509,10 +509,11 @@ input {
         align-items: center;  
         font-size: 0.8em; ;  
         table-layout:auto;
+        overflow: hidden;
     }
 
     #tablamaterias {
-        overflow: hidden;
+        
     }
 
 
