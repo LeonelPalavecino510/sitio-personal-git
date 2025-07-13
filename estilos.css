@@ -208,15 +208,15 @@ ul .section {
 
 a.sitioprofe {
     text-decoration:none;
-    color:#64768A
+    color:#dbc3c3
 }
 
 a.sitioprofe:hover {
-    color: #000000;
+    color: #90c780;
 }
 
 a.sitioprofe:active {
-    color: #51575f;
+    color: #4fcd2f;
 }
 
 .section {
@@ -476,7 +476,7 @@ input {
     text-align: center;
 }
 /*Responsive */
-@media (max-width:600px) {
+@media (min-width:600px) {
         h1{
         font-size: 5rem;
         align-items: center;
@@ -521,29 +521,77 @@ input {
     .avisos {width: 100%;
         justify-content: center;
         text-align: center;
+        
+
     }
 /* Página materias2025 */
     .materias {
         align-items: center;
     }
-    .containertitle {
-    min-width: 90%;
+    .containertitle{
+        min-width: 80%;
+        max-width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin: 1.5rem ;
-        padding:  4em 2em;
+        margin: 1.6rem ;
+        padding:  7em 1rem;
         background-color: #dfdfdf4f;
-        border-radius: 8px;
-        margin-top: 0;
-        gap: 2.5rem;
+        border-radius: 3rem;
+        gap: 4rem;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    #card-dydw { background-image:linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+    ), url(img/programaya.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #card-sist {
+        background-image:linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+    ), url(img/Download\ Digital\ business\ image\ with\ graphs\ and\ diagrams\ over\ blue\ background_\ 3d\ rendering\,\ Business\ data\ analysis\ and\ analytics\ of\ customers\,\ for\ free.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #card-mat {
+        background-image:linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+    ), url(img/Equação\ Matemática\ Fórmula\ De\ álgebra\ Imagem\ De\ Fundo\ De\ Vídeo\ De\ Educação\ Escolar\ _\ MOV\ baixar\ grátis\ -\ Pikbest.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #card-progra {
+        background-image:linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+    ), url(img/Python\ e\ Tecnologia_\ Arte\ Digital\ Futurística\ de\ Programação.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    p.sectiontitle {
+        font-size: 1.8em;
     }
     .containertitle ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: justify;
+        justify-items: center;
         
         
     }
@@ -555,6 +603,11 @@ input {
         font-size: 2em;
         gap: 0.5rem;
     }
+    .section li {
+        list-style: none;
+    }
+
+    /* Página sobre mi */
     #menu { 
         flex-direction:column;
         align-items: center;
