@@ -504,14 +504,14 @@ input {
     }
 /* Página index */
     table {
-        max-width: 40%;
+        max-width: 300px;
+        max-height: 300px;
         align-items: center;  
         font-size: 0.8em; ;  
         table-layout:auto;
     }
 
     #tablamaterias {
-        width: 50%;
         overflow: hidden;
     }
 
