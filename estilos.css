@@ -476,7 +476,7 @@ input {
     text-align: center;
 }
 /*Responsive */
-@media (min-width:600px) {
+@media (max-width:600px) {
         h1{
         font-size: 5rem;
         align-items: center;
@@ -488,7 +488,7 @@ input {
     }
 
     main {
-        padding: 2em 4em;
+        padding: 1em 2em;
         width: 100%;
         align-items: center;
     }
@@ -505,16 +505,14 @@ input {
     }
 /* Página index */
     table {
-        max-width: 50%;
+        max-width: 40%;
         align-items: center;  
-        font-size: 0.5em ;  
+        font-size: 0.8em; ;  
         table-layout:auto;
-        
     }
 
     #tablamaterias {
-        width: 100%;
-        margin: 0 auto;
+        width: 80%;
         overflow: hidden;
     }
 
