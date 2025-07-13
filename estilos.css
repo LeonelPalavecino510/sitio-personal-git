@@ -476,7 +476,7 @@ input {
     text-align: center;
 }
 /*Responsive */
-@media (min-width:720px) {
+@media (min-width:600px) {
         h1{
         font-size: 5rem;
         align-items: center;
@@ -492,28 +492,34 @@ input {
         width: 100%;
         align-items: center;
     }
+
+    header nav {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 0;
+    }
     nav {
         align-items: center;
         justify-content: center;
         margin-top: 1rem;
     }
-    
+/* Página index */
     table {
-        width: 100%;
+        max-width: 80%;
         align-items: center;  
         font-size: 0.8em ;  
     }
-
+/* Página avisos */
     .avisos {width: 100%;
         justify-content: center;
         text-align: center;
     }
-
+/* Página materias2025 */
     .materias {
         align-items: center;
     }
     .containertitle {
-    width: 90%;
+    min-width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -523,6 +529,7 @@ input {
         background-color: #dfdfdf4f;
         border-radius: 8px;
         margin-top: 0;
+        gap: 2.5rem;
     }
     .containertitle ul {
         display: flex;
@@ -532,22 +539,18 @@ input {
         
         
     }
-    ul.section{
-        text-decoration: none;
+    .section{
+        display: flex;
+        justify-content: space-between;
         list-style-type: none;
         text-align: justify;
         font-size: 2em;
+        gap: 0.5rem;
     }
     #menu { 
         flex-direction:column;
         align-items: center;
         justify-content: space-between;
-    }
-
-    header nav {
-        flex-direction: row;
-        justify-content: center;
-        padding-bottom: 0;
     }
 
     #imgsobremi{
@@ -570,7 +573,41 @@ input {
         text-align: center;
         position:sticky;
     }
+/* Página contacto */
+label {
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
 
+}
 
+    input, textarea {
+        width: 50%;
+        padding: 0.5rem;
+        margin: 1rem ;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    /* Página inicio */
+    .containernav nav { display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    table {
+        max-width: 50%;
+        font-size: 0.8em;
+    }
+
+    /* Página avisos */
 
 }
