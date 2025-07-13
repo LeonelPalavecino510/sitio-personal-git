@@ -509,13 +509,7 @@ input {
         align-items: center;  
         font-size: 0.8em; ;  
         table-layout:auto;
-        overflow:-moz-hidden-unscrollable;
     }
-
-    #tablamaterias {
-        
-    }
-
 
 /* Página avisos */
     .avisos {width: 100%;
