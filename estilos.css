@@ -155,12 +155,11 @@ footer div{
 
 /*ESTILO PARA AVISOS*/
 .avisos {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    width: 100%;
     color: white;
     gap: 2rem;
 }
