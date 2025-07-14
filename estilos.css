@@ -126,7 +126,6 @@ th, td {
     padding:1rem;
     text-align: center;
     border: 1px solid #ffffff;
-    
 }
 
 th {
@@ -141,12 +140,12 @@ footer  {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: center;
     background-color: rgba(33, 38, 42, 0.441); /* gris leve con transparencia */
     color: white;
-    width: 100%;
     font-size: 1em;
-    text-align: center;
-    min-width: fit-content;
+    
+    
     
 }
 
