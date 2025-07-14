@@ -1,35 +1,38 @@
-/*Con el formulario en el sitio personal como estudiante de la facultad. Configurar los  inputs del mismo para darles un estilo igual a cada uno (puede ser color, pseudoclases, etc.), definir los id o clases para su programación en JavaScript para la validación del formulario.  
-Programar una función con JavaScript que Muestre un mensaje cuando el usuario toque el botón de enviar el formulario.   
-Si los datos no fueron completados o son erroneos (ejemplo; no ingresa un email válido), debe dar un mensaje de error con la información a corregir.
-En caso de haber completado bien el formulario. Debe presentar un mensaje que diga gracias por su contacto (Nombre de la persona que escribió ) y el texto que diga "en breve le estaré respondiendo".
-*/
-// ejercicio 2 //
-document.addEventListener("DOMContentLoaded", function (formulario) {
-    const formulario = document.getElementById("formulario");
-    // Escucha evento
-    formulario.addEventListener("button", function (formulario) {
-    alert("Formulario enviado correctamente.");
+// Escuchar el envío del formulario
+document.getElementById('formulario').addEventListener('submit', function(e) {
+e.preventDefault();
+
+  //Obtener los valores de los campos
+    const nombre = document.getElementById('nombre').value.trim();
+    const apellido = document.getElementById('apellido').value.trim();
+    const puesto = document.getElementById('puesto').value.trim();
+    
+  // Validar campos vacíos
+    let mensaje = '';
+    if (!nombre) mensaje += 'Nombre\n';
+    if (!apellido) mensaje += 'Apellido\n';
+    if (!email) mensaje += 'Correo electrónico\n';
+
+  // Mostrar alerta si falta completar algún campo
+
+    if (mensaje) {
+    Swal.fire({
+    icon: 'warning',
+    title: 'Campo(s) incompleto(s)',
+    text: `Por favor, completá el/los siguiente(s) campo(s):\n${mensaje}`,
+    confirmButtonColor: '#3085d6'
     });
-});
-
-// ejercicio 3 //
-function validarFormulario() {
-    const nombre = document.getElementById("nombre").value;
-    const email = document.getElementById("email").value;
-    const asunto = document.getElementById("asunto").value;
-    const mensaje = document.getElementById("mensaje").value;
-
-    if (nombre === "" || email === "" || asunto === "" || mensaje === "") {
-        alert("Por favor, complete todos los campos.");
-        return false;
-    }
-
-    if (!validateEmail(email)) {
-        alert("Por favor, ingrese un correo electrónico válido.");
-        return false;
-    }
-
-    alert(`Gracias por su contacto, ${nombre}. En breve le estaré respondiendo.`);
-    return true;
+    return;
 }
 
+  //Mostrar mensaje de éxito
+Swal.fire({
+    icon: 'success',
+    title: '¡Gracias por tu contacto!',
+    text: `¡Gracias por tu contacto ${nombre} ${apellido}. Tu mensaje ha sido enviado, en breve estaré respondiendo.`,
+    confirmButtonColor: '#3085d6'
+});
+
+  //Reiniciar formulario
+document.getElementById('formulario').reset();
+});

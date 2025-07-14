@@ -592,6 +592,7 @@ form {
     }
     .section li {
         list-style: none;
+
     }
 /* Página materias2025 */
     .materias {
@@ -601,6 +602,7 @@ form {
     /* Página sobre mi */
     #imgsobremi{
         max-width:500px;
+        
     }
 
     #contenidoimg #contenidotextosobremi {
@@ -615,6 +617,7 @@ form {
         min-width: 100%;
         align-items: center;
         padding: 2rem;
+        
     }
     /* Página materias2025 */
 
