@@ -111,6 +111,28 @@ nav  a {
     padding: 10px 25px
 }
 
+#modoBtn.hover {
+background-color:#535A63; 
+    color: white;
+    padding: 10px 25px
+}
+button #modoBtn {display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+    background-color: #B2C1D6	; 
+    font-weight: bold;
+    box-shadow: #ffffff 0px 0px 15px 5px;
+    border-radius:20px;
+    justify-content: center;
+    
+}
+
+#modoBtn:active {
+    background-color: #4E4B45; 
+    color: white;
+    padding: 10px 25px
+}
+
 #tablamaterias {
     color: white ;
     font-size: 20px;
@@ -672,3 +694,27 @@ input {
 
 
 }
+
+/* Modo oscuro */
+body.oscuro {
+    background-color: #121212;
+    color: white;
+}
+
+body.oscuro a,
+body.oscuro p,
+body.oscuro h1,
+body.oscuro h2,
+body.oscuro h3,
+body.oscuro th,
+body.oscuro td,
+body.oscuro label {
+    color: white;
+}
+
+body.oscuro header,
+body.oscuro main,
+body.oscuro footer {
+background-color: #1e1e1e;
+}
+
