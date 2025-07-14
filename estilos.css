@@ -132,14 +132,14 @@ nav  a {
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px ;
+    border-collapse: collapse ;
     align-items: center;
+    width: min-content;
+    min-width: 90%;
 }
 
 th, td {
-    padding: 10px;
+    padding:1rem;
     text-align: center;
     border: 1px solid #ffffff;
 }
@@ -432,7 +432,7 @@ form {
     justify-content: center;
     width: 100%;
 }
-input type [text], textarea {
+input  {
     width: 50%;
     padding: 5px;
     margin: 10px 0;
@@ -503,11 +503,17 @@ input {
     }
 /* Página index */
     table {
-        max-width: 300px;
-        max-height: 300px;
+        width: 50%;
         align-items: center;  
-        font-size: 0.8em; ;  
+        font-size: 0.8em; 
         table-layout:auto;
+        max-width: fit-content;
+    }
+
+    th, td {
+        padding: 6px;
+        text-align: center;
+        border: 1px solid #ffffff;
     }
 
 /* Página avisos */
@@ -651,28 +657,4 @@ input {
 
 }
 
-@media (max-width: 1100px) {
-    /* Página inicio */
-    .containernav nav { display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-    }
 
-    h1 {
-        font-size: 4rem;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    table {
-        max-width: 50%;
-        font-size: 0.8em;
-    }
-
-    /* Página avisos */
-
-}
