@@ -6,7 +6,6 @@
 
 html {
     scroll-behavior: smooth;
-    
 
 }
 :root {
@@ -20,18 +19,23 @@ html {
     --fontcolor: #17202d;
     }
 
+header{margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #5f7fa3;
+}
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: fit-content;
-    padding: 4rem 4rem;
+    flex: 1;
+    padding: 2em 4em;
 }
 
 body{
-    
+    margin: 0;
+    padding: 0;
     background-color: #5f7fa3;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,8 +44,9 @@ body{
 }
 h1, h2, h3 {
     font-family: var(--fuente);
-    
+
 }
+
 
 h2{
     color: white ;
@@ -52,13 +57,12 @@ h2{
     margin-bottom: 1.3rem;
 }
 
-div nav {
-    display: flex;
+
+.containernav nav{
+    display:flex;
     flex-direction: column;
-    justify-content: initial;
-    align-items: center;
+    text-align: center;
     gap: 1.5rem;
-    padding: 1rem ;
 }
 
 nav  a { 
@@ -72,6 +76,7 @@ nav  a {
     font-weight: 600;
     font-size: 1em;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .seleccionado {
@@ -107,26 +112,27 @@ nav  a {
 }
 
 #tablamaterias {
-    display: flex;
     color: white ;
+    font-size: 20px;
     text-align: center;
+    width: 80%;
     margin: 0 auto;
     align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    box-sizing: border-box;
 }
 
 table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px ;
     border-collapse: collapse ;
     align-items: center;
-    font-size: 0.7em;
-    padding: 0 1em;
-    table-layout: fixed;
+    width: min-content;
+    min-width: 90%;
 }
 
 th, td {
-    padding: 0.5em 1em;
+    padding: 10px;
+    padding:1rem;
     text-align: center;
     border: 1px solid #ffffff;
 }
@@ -135,10 +141,6 @@ th {
     background-color: rgba(4, 4, 4, 0.441);
     color: #ffffff;
     font-weight:lighter;
-    padding-bottom: 1em;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-align: left;
 }
 /* FINAL DE HOME */
 
@@ -147,11 +149,11 @@ footer  {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center;
     background-color: rgba(33, 38, 42, 0.441); /* gris leve con transparencia */
     color: white;
+    width: 100%;
     font-size: 1em;
-    width: fit-content;
+    text-align: center;
 
 }
 
@@ -162,31 +164,17 @@ footer div{
 
 /*ESTILO PARA AVISOS*/
 .avisos {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     text-align: center;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
     color: white;
     gap: 2rem;
-    box-sizing: border-box;
 }
 
-    .containertitle{
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0.5rem ;
-        padding: 3em 1em;
-        background-color: #dfdfdf4f;
-        border-radius: 3rem;
-        gap: 2.5rem;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    }
-
-    #card-dydw { background-image:linear-gradient(
+#card-dydw { background-image:linear-gradient(
     rgba(0, 0, 0, 0.1),
     rgba(0, 0, 0, 1)
     ), url(img/programaya.jfif);
@@ -224,9 +212,22 @@ footer div{
         background-position: center;
         background-repeat: no-repeat;
     }
+
+.containertitle {
+    width: 80%;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.6rem auto;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .sectiontitle {
     font-family: var(--fuente);
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: bold;
 }
 
@@ -234,8 +235,7 @@ ul .section {
     text-align: center;
     justify-content: center;
     text-decoration: none;
-    list-style: none;
-    
+
 }
 
 .section li {
@@ -257,13 +257,24 @@ a.sitioprofe:active {
     color: #4fcd2f;
 }
 
+.section {
+    font-family: var(--fuente2);
+    font-size: 2rem;
+    align-items: center;
+}
+
 /*ESTILO PARA SOBRE MI*/
+.titleleo {display:flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+}
 
 main .cardsobremi {
     background-color: var(--colorcard);
     border-radius: 20px;
-    padding: 2rem;
-    max-width: 80%;
+    padding: 20px;
+    width: 80%;
 }
 
 main section {
@@ -281,7 +292,7 @@ main section {
     justify-content: center;
     height: 200px;
     width: 200px;
-    
+
 }
 #imgsobremi img {
     width: 100%;
@@ -310,7 +321,7 @@ main section {
     flex-direction: center;
     text-align: center;
     justify-content: center;
-    width: 70%;
+    min-width: 70%;
     color: white;
     background-color:#b3c4d86e;
     padding: 2rem;
@@ -343,7 +354,7 @@ main section {
     font-weight: bolder;
     border-radius:20px;
     justify-content: center;
-    
+
 }
 
 .botondiseño:hover {
@@ -366,12 +377,7 @@ main section {
 }
 
 
-
 /*ESTILO PARA DISEÑO Y DESARROLLO WEB*/
-h1.home {
-    font-size: 10px;
-}
-
 h3  {
     color: white;
     font-size: 30px;
@@ -400,7 +406,7 @@ h3  {
 }
 #actividades h3 {
     display: flex;
-    
+
 }
 #actividades{ color: white;
     font-size: 20px;
@@ -452,30 +458,35 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.235); 
-    font-family: var(--fuente);
-    
 }
 
-label {
+    label  {
+    font-family: var(--fuente2);
     color: white;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: var(--bold);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-input {
-    font-family: var(--fuente);
-    padding: 20px 10px ;
-    min-width: 60%;
-}
+    input  {
+        width: 50%;
+        padding: 0.5em 1.5em;
+        margin-top: 2em ;
+        font-size: 1.2rem;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
 .btn{
-    background-color: #778496;
+    background-color: #9ab2d3;
     color: #000000;
     font-weight: bold;
     box-shadow: #FFEECD 0px 0px 5px 2px;
@@ -500,11 +511,128 @@ input {
     text-align: center;
 }
 /*Responsive */
-@media (min-width:600px) {
-        
+@media (min-width:400px) {
 
+    body {
+        font-size: 1.2em;
+    }
+
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        align-items: center;
     }
 
 
 
+    main {
+        width: 100%;
+        align-items: center;
+    }
 
+
+    nav {
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+/* Página index */
+    table {
+        max-width: 300px;
+        max-height: 300px;
+        width: 50%;
+        align-items: center;  
+        font-size: 0.8em; 
+        table-layout:fixed;
+        max-width: fit-content;
+        box-sizing: border-box;
+    }
+
+    th, td {
+        padding: 6px;
+        text-align: center;
+        border: 1px solid #ffffff;
+    }
+
+/* Página avisos */
+.containertitle{
+        min-width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1.6rem ;
+        padding:  6em 2rem;
+        background-color: #dfdfdf4f;
+        border-radius: 3rem;
+        gap: 4rem;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    p.sectiontitle {
+        font-size: 1.8em;
+    }
+    .containertitle ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        justify-items: center;
+
+
+    }
+    .section{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        text-align: justify;
+        font-size: 2em;
+        gap: 0.5rem;
+    }
+    .section li {
+        list-style: none;
+    }
+/* Página materias2025 */
+    .materias {
+        align-items: center;
+    }
+    
+    /* Página sobre mi */
+    #imgsobremi{
+        max-width:500px;
+    }
+
+    #contenidoimg #contenidotextosobremi {
+        width: 70%;
+        padding: 4rem 0.5rem ;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer {
+        min-width:fit-content;
+        min-width: 100%;
+        align-items: center;
+        padding: 2rem;
+    }
+    /* Página materias2025 */
+
+    .materias {
+        max-width: fit-content;
+        padding: 2.5rem;
+        margin: 2rem;
+    }
+    .materias ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        justify-items: center;
+    }
+
+/* Página contacto */
+
+
+
+} 
