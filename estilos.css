@@ -118,7 +118,6 @@ nav  a {
 #tablamaterias {
     color: white ;
     text-align: center;
-
     margin: 0 auto;
     padding: 2rem;
     align-items: center;
@@ -128,6 +127,7 @@ table {
     border-collapse: collapse ;
     align-items: center;
     font-size: 1em;
+    max-width: 300px;
     
 }
 
@@ -173,19 +173,64 @@ footer div{
     justify-content: center;
     width: 100%;
     color: white;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.containertitle {
-    width: 300px;
-    background-color: #b3c4d86e;
-    padding: 10px;
-    border-radius: 8px;
-}
+    .containertitle{
+        min-width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1.6rem ;
+        padding:  7em 1rem;
+        background-color: #dfdfdf4f;
+        border-radius: 3rem;
+        gap: 4rem;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
 
+    #card-dydw { background-image:linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+    ), url(img/programaya.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #card-sist {
+        background-image:linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+    ), url(img/Download\ Digital\ business\ image\ with\ graphs\ and\ diagrams\ over\ blue\ background_\ 3d\ rendering\,\ Business\ data\ analysis\ and\ analytics\ of\ customers\,\ for\ free.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #card-mat {
+        background-image:linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+    ), url(img/Equação\ Matemática\ Fórmula\ De\ álgebra\ Imagem\ De\ Fundo\ De\ Vídeo\ De\ Educação\ Escolar\ _\ MOV\ baixar\ grátis\ -\ Pikbest.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #card-progra {
+        background-image:linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+    ), url(img/Python\ e\ Tecnologia_\ Arte\ Digital\ Futurística\ de\ Programação.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 .sectiontitle {
     font-family: var(--fuente);
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -193,6 +238,7 @@ ul .section {
     text-align: center;
     justify-content: center;
     text-decoration: none;
+    list-style: none;
     
 }
 
@@ -521,62 +567,7 @@ input {
 
     }
 /* Página materias2025 */
-    .materias {
-        align-items: center;
-    }
-    .containertitle{
-        min-width: 80%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: 1.6rem ;
-        padding:  7em 1rem;
-        background-color: #dfdfdf4f;
-        border-radius: 3rem;
-        gap: 4rem;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    }
-
-    #card-dydw { background-image:linear-gradient(
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 1)
-    ), url(img/programaya.jfif);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #card-sist {
-        background-image:linear-gradient(
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 1)
-    ), url(img/Download\ Digital\ business\ image\ with\ graphs\ and\ diagrams\ over\ blue\ background_\ 3d\ rendering\,\ Business\ data\ analysis\ and\ analytics\ of\ customers\,\ for\ free.jfif);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #card-mat {
-        background-image:linear-gradient(
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 1)
-    ), url(img/Equação\ Matemática\ Fórmula\ De\ álgebra\ Imagem\ De\ Fundo\ De\ Vídeo\ De\ Educação\ Escolar\ _\ MOV\ baixar\ grátis\ -\ Pikbest.jfif);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #card-progra {
-        background-image:linear-gradient(
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 1)
-    ), url(img/Python\ e\ Tecnologia_\ Arte\ Digital\ Futurística\ de\ Programação.jfif);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+    
 
     p.sectiontitle {
         font-size: 1.8em;
