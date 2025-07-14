@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    
 
 }
 :root {
@@ -19,11 +20,6 @@ html {
     --fontcolor: #17202d;
     }
 
-header{margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #5f7fa3;
-}
 
 main {
     display: flex;
@@ -31,7 +27,7 @@ main {
     align-items: center;
     justify-content: center;
     width: fit-content;
-    padding: 2rem;
+    padding: 4rem 4rem;
 }
 
 body{
@@ -46,12 +42,6 @@ h1, h2, h3 {
     font-family: var(--fuente);
     
 }
-h1 {
-    color: white;
-    font-size:4rem;
-    font-weight: 6000;
-    align-items: center ;
-}
 
 h2{
     color: white ;
@@ -62,8 +52,9 @@ h2{
     margin-bottom: 1.3rem;
 }
 
-header nav {
+div nav {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
@@ -182,11 +173,11 @@ footer div{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin: 1.6rem ;
-        padding:  7em 1rem;
+        margin: 0.5rem ;
+        padding: 4em 1em;
         background-color: #dfdfdf4f;
         border-radius: 3rem;
-        gap: 4rem;
+        gap: 2.5rem;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     }
 
@@ -245,6 +236,7 @@ ul .section {
 .section li {
     font-size: 0.6em;
     font-style:italic;
+    list-style: none;
 }
 
 a.sitioprofe {
@@ -260,24 +252,13 @@ a.sitioprofe:active {
     color: #4fcd2f;
 }
 
-.section {
-    font-family: var(--fuente2);
-    font-size: 2rem;
-    align-items: center;
-}
-
 /*ESTILO PARA SOBRE MI*/
-main h2 .titleleo {display:flex; 
-    flex-direction: column;
-    align-items: center;
-    padding-left: 30px;
-}
 
 main .cardsobremi {
     background-color: var(--colorcard);
     border-radius: 20px;
-    padding: 20px;
-    width: 80%;
+    padding: 2rem;
+    max-width: 80%;
 }
 
 main section {
@@ -324,7 +305,7 @@ main section {
     flex-direction: center;
     text-align: center;
     justify-content: center;
-    min-width: 70%;
+    width: 70%;
     color: white;
     background-color:#b3c4d86e;
     padding: 2rem;
@@ -379,18 +360,13 @@ main section {
     background-color: #6177EB;
 }
 
-form{
-    color: white;
-    width: 100;            
-    height: 50%;          
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight:100;
-}
+
 
 /*ESTILO PARA DISEÑO Y DESARROLLO WEB*/
+h1.home {
+    font-size: 10px;
+}
+
 h3  {
     color: white;
     font-size: 30px;
@@ -471,25 +447,24 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.235); 
+    font-family: var(--fuente);
+    
 }
-input  {
-    width: 50%;
-    padding: 5px;
-    margin: 10px 0;
-}
+
 label {
     color: white;
     font-size: 25px;
     font-weight: bold;
+
 }
+
 input {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    color: #000000;
-    font-size: 20px;
-    
+    font-family: var(--fuente);
 }
+
 .btn{
     background-color: #778496;
     color: #000000;
@@ -517,11 +492,7 @@ input {
 }
 /*Responsive */
 @media (min-width:500px) {
-        h1{
-        font-size: 5rem;
-        align-items: center;
-        text-align: center justify;
-    }
+        
 
     h2, h3 {
         align-items: center;
