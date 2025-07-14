@@ -124,7 +124,6 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin: 10px ;
-    border-collapse: collapse ;
     align-items: center;
     width: min-content;
     min-width: 90%;
@@ -171,7 +170,7 @@ footer div{
     justify-content: center;
     width: 100%;
     color: white;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 #card-dydw { background-image:linear-gradient(
@@ -201,6 +200,7 @@ footer div{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        
     }
 
     #card-progra {
@@ -222,12 +222,11 @@ footer div{
     justify-content: space-around;
     align-items: center;
     margin: 1.6rem auto;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .sectiontitle {
     font-family: var(--fuente);
-    font-size: 2.2em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -239,7 +238,7 @@ ul .section {
 }
 
 .section li {
-    font-size: 0.6em;
+    font-size: 0.5em;
     font-style:italic;
     list-style: none;
 }
@@ -635,7 +634,9 @@ form {
     }
 
 /* Página contacto */
-
+input {
+    min-width: 60%;
+}
 
 
 } 

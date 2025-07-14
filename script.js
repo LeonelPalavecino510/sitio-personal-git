@@ -1,38 +1,23 @@
-// Escuchar el envío del formulario
 document.getElementById('formulario').addEventListener('submit', function(e) {
-e.preventDefault();
+  e.preventDefault();
 
-  //Obtener los valores de los campos
-    const nombre = document.getElementById('nombre').value.trim();
-    const apellido = document.getElementById('apellido').value.trim();
-    const puesto = document.getElementById('puesto').value.trim();
-    
-  // Validar campos vacíos
-    let mensaje = '';
-    if (!nombre) mensaje += 'Nombre\n';
-    if (!apellido) mensaje += 'Apellido\n';
-    if (!email) mensaje += 'Correo electrónico\n';
+  const nombre = document.getElementById('nombre').value.trim();
+  const apellido = document.getElementById('apellido').value.trim();
+  const email = document.getElementById('email').value.trim();
 
-  // Mostrar alerta si falta completar algún campo
+  let mensaje = 'Por favor completá los siguientes campos:\n';
 
-    if (mensaje) {
-    Swal.fire({
-    icon: 'warning',
-    title: 'Campo(s) incompleto(s)',
-    text: `Por favor, completá el/los siguiente(s) campo(s):\n${mensaje}`,
-    confirmButtonColor: '#3085d6'
-    });
+  if (nombre === '') mensaje += '- Nombre\n';
+  if (apellido === '') mensaje += '- Apellido\n';
+  if (email === '') mensaje += '- Correo electrónico\n';
+
+  // Si falta alguno, mostrar alerta
+  if (nombre === '' || apellido === '' || email === '') {
+    alert(mensaje);
     return;
-}
+  }
 
-  //Mostrar mensaje de éxito
-Swal.fire({
-    icon: 'success',
-    title: '¡Gracias por tu contacto!',
-    text: `¡Gracias por tu contacto ${nombre} ${apellido}. Tu mensaje ha sido enviado, en breve estaré respondiendo.`,
-    confirmButtonColor: '#3085d6'
-});
-
-  //Reiniciar formulario
-document.getElementById('formulario').reset();
+  // Si está todo bien
+  alert(`¡Gracias por tu contacto, ${nombre} ${apellido}!`);
+  this.reset();
 });
