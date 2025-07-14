@@ -159,7 +159,7 @@ footer div{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
+    align-items: center;
     color: white;
     gap: 2rem;
 }
@@ -171,7 +171,7 @@ footer div{
         justify-content: space-around;
         align-items: center;
         margin: 0.5rem ;
-        padding: 4em 1em;
+        padding: 3em 1em;
         background-color: #dfdfdf4f;
         border-radius: 3rem;
         gap: 2.5rem;
