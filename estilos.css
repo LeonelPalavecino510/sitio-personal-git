@@ -62,19 +62,12 @@ h2{
     margin-bottom: 1.3rem;
 }
 
-#sectionnav { 
+header nav {
     display: flex;
-    flex-direction:column; /* para que el menu se vea en vertical */
-    align-items:center;
-    color: white;
-    margin-top: 2rem;
-}
-
-header nav{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
+    padding: 1rem ;
 }
 
 nav  a { 
@@ -124,24 +117,23 @@ nav  a {
 
 #tablamaterias {
     color: white ;
-    font-size: 20px;
     text-align: center;
-    width: 80%;
-    margin: 0 auto;
+    max-width: 85%;
     align-items: center;
 }
 
 table {
     border-collapse: collapse ;
     align-items: center;
-    width: min-content;
-    min-width: 90%;
+    font-size: 1em;
+    
 }
 
 th, td {
     padding:1rem;
     text-align: center;
     border: 1px solid #ffffff;
+    
 }
 
 th {
@@ -491,9 +483,11 @@ input {
         align-items: center;
     }
 
-    header nav {
-        flex-direction: row;
-        justify-content: center;
+    nav {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
     }
 
     nav {
@@ -503,11 +497,11 @@ input {
     }
 /* Página index */
     table {
-        width: 50%;
+        width: 40%;
         align-items: center;  
-        font-size: 0.8em; 
-        table-layout:auto;
-        max-width: fit-content;
+        font-size: 0.7em; 
+        table-layout:fixed;
+        min-width: fit-content;
     }
 
     th, td {
