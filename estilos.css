@@ -110,15 +110,15 @@ nav  a {
     color: white ;
     text-align: center;
     margin: 0 auto;
-    padding: 2rem;
     align-items: center;
+    max-width: 50%
 }
 
 table {
     border-collapse: collapse ;
     align-items: center;
     font-size: 1em;
-    max-width: 300px;
+    
     
 }
 
@@ -144,7 +144,7 @@ footer  {
     background-color: rgba(33, 38, 42, 0.441); /* gris leve con transparencia */
     color: white;
     font-size: 1em;
-    width: 100%;
+    width: fit-content;
 
 }
 
@@ -165,7 +165,7 @@ footer div{
 }
 
     .containertitle{
-        min-width: 80%;
+        min-width: 70%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -455,11 +455,15 @@ label {
     color: white;
     font-size: 25px;
     font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 
 }
 
 input {
     font-family: var(--fuente);
+    padding: 20px 10px ;
+    min-width: 60%;
 }
 
 .btn{
@@ -491,124 +495,7 @@ input {
 @media (min-width:500px) {
         
 
-    h2, h3 {
-        align-items: center;
-    }
-
-    main {
-        width: 100%;
-        align-items: center;
-    }
-
-    nav {
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-    }
-
-    nav {
-        align-items: center;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-/* Página index */
-    table {
-        width: 40%;
-        align-items: center;  
-        font-size: 0.7em; 
-        table-layout:fixed;
-        min-width: fit-content;
-    }
-
-    th, td {
-        padding: 6px;
-        text-align: center;
-        border: 1px solid #ffffff;
-    }
-
-/* Página avisos */
-    .avisos {width: 100%;
-        justify-content: center;
-        text-align: center;
-        
-
-    }
-/* Página materias2025 */
-    
-
-    p.sectiontitle {
-        font-size: 1.8em;
-    }
-    .containertitle ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: justify;
-        justify-items: center;
-        
-        
-    }
-    .section{
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        text-align: justify;
-        font-size: 2em;
-        gap: 0.5rem;
-    }
-    .section li {
-        list-style: none;
-    }
-
-    /* Página sobre mi */
-    #imgsobremi{
-        max-width:500px;
-    }
-    
-    #contenidoimg #contenidotextosobremi {
-        width: 70%;
-        padding: 4rem 0.5rem ;
-        display: flex;
-        flex-direction: row;
-    }
-
-    footer {
-        min-width:fit-content;
-        max-width: 100%;
-        align-items: center;
-        padding: 2rem;
-    }
-    /* Página materias2025 */
-
-    .materias {
-        max-width: fit-content;
-        padding: 2.5rem;
-        margin: 2rem;
-    }
-    .materias ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: justify;
-        justify-items: center;
-    }
-
-/* Página contacto */
-
-    label  {
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-    input  {
-        width: 50%;
-        padding: 0.5em 1.5em;
-        margin-top: 2em ;
-        font-size: 1.2rem;
-        align-items: center;
+   
     }
 
 }
