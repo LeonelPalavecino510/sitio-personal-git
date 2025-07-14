@@ -111,13 +111,16 @@ nav  a {
     text-align: center;
     margin: 0 auto;
     align-items: center;
-    max-width: 50%
+    max-width: 100%
 }
 
 table {
     border-collapse: collapse ;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.7em;
+    width: 50%;
+    margin: 0 auto;
+    
     
     
 }
