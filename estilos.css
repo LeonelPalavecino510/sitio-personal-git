@@ -107,24 +107,30 @@ nav  a {
 }
 
 #tablamaterias {
+    display: flex;
     color: white ;
     text-align: center;
     margin: 0 auto;
     align-items: center;
-    max-width: 100%
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
 }
 
 table {
     border-collapse: collapse ;
     align-items: center;
     font-size: 0.7em;
-    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    
+    table-layout: fixed;
 
     
 }
 
 th, td {
-    padding:1rem ;
+    padding: 0.5em 1em;
     text-align: center;
     border: 1px solid #ffffff;
 }
@@ -133,6 +139,10 @@ th {
     background-color: rgba(4, 4, 4, 0.441);
     color: #ffffff;
     font-weight:lighter;
+    padding-bottom: 1em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-align: left;
 }
 /* FINAL DE HOME */
 
