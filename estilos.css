@@ -283,49 +283,48 @@ main section {
     flex-direction: center;
     text-align: center;
     justify-content: center;
-    width: 60%;
+    min-width: 70%;
     color: white;
     background-color:#b3c4d86e;
     padding: 2rem;
     border-radius: 1em;
+    /* fondo */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 50)
+    ), url(img/uade-campus-cabajpg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-li.materias1c {
-    font-family:var(--fuente);
-    font-size: 2rem;
+.textomaterias {
+    font-family: var(--fuente);
+    font-size: 1.5rem;
     text-align: center;
-    align-items: center;
-}
-
-ul #materias25  { 
-    color:white;
-    text-decoration: none;
-    margin-bottom: 20px;
-}
-
-li.materias1c {
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 1.5em;
+    margin-top: 1rem;
 }
 
 .botondiseño {
     font-family: var(--fuente);
     display: inline-block;
-    padding: 1rem 3rem;
-    font-size: 1.2em;
-    background-color: #b4bac3	; 
-    font-weight: bold;
+    padding: 2rem 1rem;
+    min-width: 100%;
+    font-size: 1.5rem;
+    background-color: #9ca7b96c	; 
+    font-weight: bolder;
     border-radius:20px;
     justify-content: center;
+    
 }
 
 .botondiseño:hover {
-    background-color: #577296; 
+    background-color: #57729680; 
     color: white;
 }
 .botondiseño:active {
-    background-color: #6177EB; 
+    background-color: #6178eb85; 
     color: white;
 }
 
@@ -433,7 +432,7 @@ form {
     justify-content: center;
     width: 100%;
 }
-input, textarea {
+input type [text], textarea {
     width: 50%;
     padding: 5px;
     margin: 10px 0;
@@ -476,7 +475,7 @@ input {
     text-align: center;
 }
 /*Responsive */
-@media (min-width:600px) {
+@media (min-width:500px) {
         h1{
         font-size: 5rem;
         align-items: center;
@@ -495,8 +494,8 @@ input {
     header nav {
         flex-direction: row;
         justify-content: center;
-        padding-bottom: 0;
     }
+
     nav {
         align-items: center;
         justify-content: center;
@@ -576,7 +575,6 @@ input {
         background-repeat: no-repeat;
     }
 
-
     p.sectiontitle {
         font-size: 1.8em;
     }
@@ -602,46 +600,53 @@ input {
     }
 
     /* Página sobre mi */
-    #menu { 
-        flex-direction:column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     #imgsobremi{
-        width:500px;
+        max-width:500px;
     }
     
     #contenidoimg #contenidotextosobremi {
-        width: 50%;
-        padding: 2rem; ;
+        width: 70%;
+        padding: 4rem 0.5rem ;
         display: flex;
         flex-direction: row;
     }
-    div #contenidotextosobremi p {
-        width: 50%;
-    }
+
     footer {
-        width:100%;
-        max-height:4rem;
+        min-width:fit-content;
+        max-width: 100%;
         align-items: center;
-        text-align: center;
-        position:sticky;
+        padding: 2rem;
     }
+    /* Página materias2025 */
+
+    .materias {
+        max-width: fit-content;
+        padding: 2.5rem;
+        margin: 2rem;
+    }
+    .materias ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        justify-items: center;
+    }
+
 /* Página contacto */
-label {
+
+    label  {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    margin-bottom: 1.2rem;
-
+    margin-top: 1.5rem;
 }
 
-    input, textarea {
+    input  {
         width: 50%;
-        padding: 0.5rem;
-        margin: 1rem ;
+        padding: 0.5em 1.5em;
+        margin-top: 2em ;
         font-size: 1.2rem;
+        align-items: center;
     }
 
 }
@@ -652,6 +657,11 @@ label {
         flex-direction:column;
         align-items: center;
         justify-content: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
     }
 
     h2 {
